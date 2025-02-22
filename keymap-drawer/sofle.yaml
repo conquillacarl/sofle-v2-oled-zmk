@@ -27,7 +27,7 @@ layers:
   - '&mkp MB2'
   - '0'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - KP NUMLOCK
   - KP 4
   - KP 5
   - KP 6
