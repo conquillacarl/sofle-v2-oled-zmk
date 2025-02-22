@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
-    Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI]
+  default: [ESCAPE, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, CLCK, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,
+    Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, SPACE, BACKSPACE, raise, ENTER, RALT, RGUI]
   lower:
   - {t: ▽, type: trans}
   - F1
@@ -12,37 +12,37 @@ layers:
   - F6
   - F7
   - F8
-  - F9
-  - F10
-  - F11
+  - '-'
+  - '='
+  - {t: ▽, type: trans}
   - '`'
-  - '1'
-  - '2'
-  - '3'
+  - KP 7
+  - KP 8
+  - KP 9
   - '4'
   - '5'
   - '6'
-  - '7'
-  - '8'
-  - '9'
+  - '&mkp MB3'
+  - '&mmv MOVE_UP'
+  - '&mkp MB2'
   - '0'
-  - F12
   - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
+  - {t: ▽, type: trans}
+  - KP 4
+  - KP 5
+  - KP 6
   - $
   - '%'
-  - ^
-  - '&'
-  - KP MULTIPLY
-  - (
+  - '&mkp MB1'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
   - )
   - '|'
   - {t: ▽, type: trans}
-  - '='
-  - '-'
-  - KP PLUS
+  - KP 1
+  - KP 2
+  - KP 3
   - '{'
   - '}'
   - {t: ▽, type: trans}
@@ -53,8 +53,8 @@ layers:
   - ':'
   - \
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - KP 0
+  - KP DOT
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
