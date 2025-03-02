@@ -57,8 +57,8 @@ layers:
   - KP DOT
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ENTER
+  - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -106,20 +106,20 @@ layers:
   - COPY
   - PASTE
   - {t: ▽, type: trans}
+  - HOME
+  - END
+  - HOME
+  - Ctl+LEFT ARROW
+  - Ctl+RIGHT
+  - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ENTER
+  - DELETE
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
