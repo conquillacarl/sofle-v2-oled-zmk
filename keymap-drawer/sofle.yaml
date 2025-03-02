@@ -32,7 +32,7 @@ layers:
   - KP 5
   - KP 6
   - $
-  - '%'
+  - '&msc SCRL_UP'
   - '&mkp MB1'
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
@@ -44,7 +44,7 @@ layers:
   - KP 2
   - KP 3
   - '{'
-  - '}'
+  - '&msc SCRL_DOWN'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '['
