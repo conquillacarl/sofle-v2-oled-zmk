@@ -56,7 +56,7 @@
             sensor-bindings = <&inc_dec_kp LEFT RIGHT>, <&inc_dec_kp UP DOWN>;
         };
 
-        lower_layer {
+        numberpad {
             label = "lower";
 
             // TODO: Some binds are waiting for shifted keycode support.
@@ -68,17 +68,19 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans          &kp F1     &kp F2           &kp F3           &kp F4    &kp F5                       &kp F6    &kp F7          &kp F8          &kp MINUS        &kp EQUAL  &trans
-&kp GRAVE       &kp KP_N7  &kp KP_N8        &kp KP_NUMBER_9  &kp N4    &kp N5                       &kp N6    &mkp MB3        &mmv MOVE_UP    &mkp MB2         &kp N0     &trans
-&kp KP_NUMLOCK  &kp KP_N4  &kp KP_NUMBER_5  &kp KP_N6        &kp DLLR  &kp PRCNT                    &mkp MB1  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp RPAR   &kp PIPE
-&trans          &kp KP_N1  &kp KP_N2        &kp KP_N3        &kp LBRC  &kp RBRC   &trans    &trans  &kp LBKT  &kp RBKT        &kp SEMI        &kp COLON        &kp BSLH   &trans
-                           &kp KP_N0        &kp KP_DOT       &trans    &trans     &trans    &trans  &trans    &trans          &trans          &trans
+&trans          &kp F1     &kp F2           &kp F3           &kp F4    &kp F5                              &kp F6    &kp F7          &kp F8          &kp MINUS        &kp EQUAL  &trans
+&kp GRAVE       &kp KP_N7  &kp KP_N8        &kp KP_NUMBER_9  &kp N4    &kp N5                              &kp N6    &mkp MB3        &mmv MOVE_UP    &mkp MB2         &kp N0     &trans
+&kp KP_NUMLOCK  &kp KP_N4  &kp KP_NUMBER_5  &kp KP_N6        &kp DLLR  &kp PRCNT                           &mkp MB1  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp RPAR   &kp PIPE
+&trans          &kp KP_N1  &kp KP_N2        &kp KP_N3        &kp LBRC  &kp RBRC   &trans       &trans      &kp LBKT  &kp RBKT        &kp SEMI        &kp COLON        &kp BSLH   &trans
+                           &kp KP_N0        &kp KP_DOT       &trans    &trans     &kp ENTER    &kp DELETE  &trans    &trans          &trans          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp K_UNDO K_REDO>;
         };
 
-        raise_layer {
+        navigation {
             label = "raise";
 
             // ------------------------------------------------------------------------------------------------------------
@@ -89,11 +91,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans    &trans     &trans   &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &kp RIGHT_BRACKET
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans     &trans    &trans    &trans     &trans   &trans
-                          &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans    &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                           &trans     &trans              &trans         &trans     &trans   &trans
+&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                                 &kp PG_UP  &trans              &kp UP         &trans     &kp N0   &kp RIGHT_BRACKET
+&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                               &kp PG_DN  &kp LEFT            &kp DOWN       &kp RIGHT  &kp DEL  &kp BSPC
+&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &kp HOME     &kp END     &kp HOME   &kp LC(LEFT_ARROW)  &kp LC(RIGHT)  &kp END    &trans   &trans
+                          &trans        &trans        &trans        &trans        &kp ENTER    &kp DELETE  &trans     &trans              &trans         &trans
             >;
 
             sensor-bindings =
