@@ -43,7 +43,7 @@ layers:
   - KP 1
   - KP 2
   - KP 3
-  - '{'
+  - KP ENTER
   - '&msc SCRL_DOWN'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -55,7 +55,7 @@ layers:
   - {t: ▽, type: trans}
   - KP 0
   - KP DOT
-  - {t: ▽, type: trans}
+  - KP ENTER
   - {type: held}
   - ENTER
   - DELETE
