@@ -1,8 +1,67 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: [ESCAPE, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, TAB, Q, W, E, R, T, Y, U, I, O, P, '[', CLCK, A, S, D, F, G, H, J, K, L, ;, '''',
-    LSHFT, Z, X, C, V, B, PLAY PAUSE, RGB TOG, N, M, ',', ., /, ENTER, LGUI, LALT, LCTRL, lower, SPACE, BACKSPACE, raise, ENTER, RALT, RGUI]
-  lower:
+  default:
+  - ESCAPE
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - BACKSPACE
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '['
+  - CLCK
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - PLAY PAUSE
+  - RGB TOG
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ENTER
+  - LGUI
+  - LALT
+  - LCTRL
+  - {t: numberpad, h: toggle}
+  - {t: SPACE, h: numberpad}
+  - BACKSPACE
+  - navigation
+  - ENTER
+  - RALT
+  - RGUI
+  numberpad:
   - {t: ▽, type: trans}
   - '1'
   - '2'
@@ -56,14 +115,14 @@ layers:
   - KP 0
   - KP DOT
   - KP ENTER
-  - {type: held}
-  - ENTER
+  - {t: ▽, type: trans}
+  - {t: ENTER, type: held}
   - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  raise:
+  navigation:
   - '`'
   - F1
   - F2
@@ -178,8 +237,8 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
   - ''
+  - {type: held}
   - ''
   - {type: held}
   - ''
