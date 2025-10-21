@@ -25,7 +25,7 @@ layers:
   - O
   - P
   - '['
-  - CLCK
+  - {t: KP NUMLOCK, h: CLCK}
   - A
   - S
   - D
