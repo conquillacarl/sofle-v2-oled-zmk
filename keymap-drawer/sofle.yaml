@@ -51,16 +51,16 @@ layers:
   - .
   - /
   - {t: ENTER, h: RIGHT SHIFT}
-  - LGUI
+  - {t: LGUI, h: navigation}
   - LALT
   - LCTRL
   - {t: SPACE, h: numberpad}
   - {t: SPACE, h: numberpad}
-  - BACKSPACE
+  - {t: BACKSPACE, h: navigation}
   - navigation
   - ENTER
   - RALT
-  - RGUI
+  - {t: RGUI, h: numberpad}
   numberpad:
   - {t: ▽, type: trans}
   - '1'
@@ -173,13 +173,13 @@ layers:
   - END
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ENTER
   - DELETE
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -234,13 +234,13 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
   - {type: held}
   - ''
   - ''
   - {type: held}
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
