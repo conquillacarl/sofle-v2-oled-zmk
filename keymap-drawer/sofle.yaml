@@ -84,8 +84,8 @@ layers:
   - '&mkp MB3'
   - '&mmv MOVE_UP'
   - '&mkp MB2'
-  - '0'
-  - '9'
+  - '|'
+  - ']'
   - KP NUMLOCK
   - KP 4
   - KP 5
@@ -96,7 +96,7 @@ layers:
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
-  - )
+  - '|'
   - '|'
   - {t: ▽, type: trans}
   - KP 1
@@ -130,29 +130,29 @@ layers:
   - F4
   - F5
   - F6
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F6
   - F7
+  - F8
   - F9
   - F10
-  - F11
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
+  - UP ARROW
+  - PG UP
+  - BACK
+  - FORWARD
   - PG UP
   - {t: ▽, type: trans}
   - UP
-  - {t: ▽, type: trans}
-  - '0'
+  - F11
+  - F12
   - ']'
   - {t: ▽, type: trans}
-  - LALT
-  - LCTRL
-  - LSHFT
-  - {t: ▽, type: trans}
-  - F12
+  - LEFT
+  - DOWN
+  - RIGHT
+  - KP ENTER
+  - REFRESH
   - PG DN
   - LEFT
   - DOWN
@@ -160,10 +160,10 @@ layers:
   - DEL
   - BSPC
   - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
+  - END
+  - DOWN
+  - PG DN
+  - KP ENTER
   - {t: ▽, type: trans}
   - HOME
   - END
