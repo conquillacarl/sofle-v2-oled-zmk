@@ -10,8 +10,8 @@ layers:
   - '6'
   - '7'
   - '8'
-  - '9'
-  - '0'
+  - {t: '9', h: '-'}
+  - {t: '0', h: '0'}
   - BACKSPACE
   - {t: TAB, h: '~'}
   - Q
@@ -24,7 +24,7 @@ layers:
   - I
   - O
   - P
-  - '['
+  - {t: '[', h: ']'}
   - {t: KP NUMLOCK, h: CLCK}
   - A
   - S
@@ -85,7 +85,7 @@ layers:
   - '&mmv MOVE_UP'
   - '&mkp MB2'
   - '0'
-  - {t: ▽, type: trans}
+  - '9'
   - KP NUMLOCK
   - KP 4
   - KP 5
@@ -115,8 +115,8 @@ layers:
   - KP 0
   - KP DOT
   - KP ENTER
-  - {type: held}
-  - ENTER
+  - {t: numberpad, h: toggle, type: held}
+  - {t: numberpad, h: toggle}
   - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
