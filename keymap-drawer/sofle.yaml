@@ -13,7 +13,7 @@ layers:
   - '9'
   - '0'
   - BACKSPACE
-  - TAB
+  - {t: TAB, h: '~'}
   - Q
   - W
   - E
@@ -50,11 +50,11 @@ layers:
   - ','
   - .
   - /
-  - ENTER
+  - {t: ENTER, h: RIGHT SHIFT}
   - LGUI
   - LALT
   - LCTRL
-  - {t: numberpad, h: toggle}
+  - {t: SPACE, h: numberpad}
   - {t: SPACE, h: numberpad}
   - BACKSPACE
   - navigation
@@ -115,8 +115,8 @@ layers:
   - KP 0
   - KP DOT
   - KP ENTER
-  - {t: ▽, type: trans}
-  - {t: ENTER, type: held}
+  - {type: held}
+  - ENTER
   - DELETE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -237,8 +237,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
   - {type: held}
+  - ''
   - ''
   - {type: held}
   - ''
