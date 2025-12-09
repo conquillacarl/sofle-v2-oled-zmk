@@ -67,10 +67,10 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans          &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4     &kp N5                            &kp NUMBER_6  &kp N7          &kp N8          &kp MINUS        &kp EQUAL  &trans
-&kp GRAVE       &kp KP_N7     &kp KP_N8        &kp KP_NUMBER_9  &kp KP_SUBTRACT  &kp NUMBER_6                      &kp N5        &mkp MB3        &mmv MOVE_UP    &mkp MB2         &kp PIPE   &kp RIGHT_BRACKET
-&kp KP_NUMLOCK  &kp KP_N4     &kp KP_NUMBER_5  &kp KP_N6        &kp KP_PLUS      &msc SCRL_UP                      &mkp MB1      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp PIPE   &kp PIPE
-&trans          &kp KP_N1     &kp KP_N2        &kp KP_N3        &kp KP_ENTER     &msc SCRL_DOWN  &trans    &trans  &kp LBKT      &kp RBKT        &kp SEMI        &kp COLON        &kp BSLH   &trans
+&trans          &kp NUMBER_1  &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4     &kp N5                            &kp NUMBER_6  &kp N7          &kp N8          &kp MINUS        &kp EQUAL      &kp DEL
+&kp GRAVE       &kp KP_N7     &kp KP_N8        &kp KP_NUMBER_9  &kp KP_SUBTRACT  &kp NUMBER_6                      &kp N5        &mkp MB3        &mmv MOVE_UP    &mkp MB2         &kp PIPE       &kp RIGHT_BRACKET
+&kp KP_NUMLOCK  &kp KP_N4     &kp KP_NUMBER_5  &kp KP_N6        &kp KP_PLUS      &msc SCRL_UP                      &mkp MB1      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp DEL        &kp DEL
+&trans          &kp KP_N1     &kp KP_N2        &kp KP_N3        &kp KP_ENTER     &msc SCRL_DOWN  &trans    &trans  &kp LBKT      &kp RBKT        &kp SEMI        &kp COLON        &kp BACKSPACE  &kp BACKSPACE
                               &kp KP_N0        &kp KP_DOT       &kp KP_ENTER     &tog 1          &tog 1    &trans  &trans        &trans          &trans          &trans
             >;
 
@@ -90,10 +90,10 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&kp GRAVE  &kp F1    &kp F2        &kp F3     &kp F4        &kp F5                              &kp F6     &kp F7              &kp F8         &kp F9     &mt F11 F10  &trans
-&trans     &kp HOME  &kp UP_ARROW  &kp PG_UP  &kp K_BACK    &kp K_FORWARD                       &kp PG_UP  &kp HOME            &kp UP         &kp END    &kp F12      &kp RIGHT_BRACKET
-&trans     &kp LEFT  &kp DOWN      &kp RIGHT  &kp KP_ENTER  &kp K_REFRESH                       &kp PG_DN  &kp LEFT            &kp DOWN       &kp RIGHT  &kp DEL      &kp BSPC
-&trans     &kp END   &kp DOWN      &kp PG_DN  &kp KP_ENTER  &trans         &kp HOME    &kp END  &kp HOME   &kp LC(LEFT_ARROW)  &kp LC(RIGHT)  &kp END    &trans       &trans
+&kp GRAVE  &kp F1    &kp F2        &kp F3     &kp F4        &kp F5                              &kp F6     &kp F7              &kp F8         &kp F9     &mt F11 F10    &kp DEL
+&trans     &kp HOME  &kp UP_ARROW  &kp PG_UP  &kp K_BACK    &kp K_FORWARD                       &kp PG_UP  &kp HOME            &kp UP         &kp END    &kp F12        &kp RIGHT_BRACKET
+&trans     &kp LEFT  &kp DOWN      &kp RIGHT  &kp KP_ENTER  &kp K_REFRESH                       &kp PG_DN  &kp LEFT            &kp DOWN       &kp RIGHT  &kp DEL        &kp DEL
+&trans     &kp END   &kp DOWN      &kp PG_DN  &kp KP_ENTER  &trans         &kp HOME    &kp END  &kp HOME   &kp LC(LEFT_ARROW)  &kp LC(RIGHT)  &kp END    &kp BACKSPACE  &kp BACKSPACE
                      &trans        &trans     &trans        &trans         &trans      &tog 2   &tog 2     &trans              &trans         &trans
             >;
 
