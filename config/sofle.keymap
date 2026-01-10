@@ -19,6 +19,29 @@
 #define RAISE 2
 #define ADJUST 3
 
+/ { 
+    behaviors { 
+        encoder_mmv_x: encoder_mmv_x { 
+            compatible = "zmk,behavior-sensor-rotate"; 
+            label = "ENCODER_MMV_X"; 
+            #binding-cells = <0>; 
+            bindings = < 
+                &mmv 10 0 
+                &mmv -10 0 
+            >; 
+        }; 
+        
+        encoder_mmv_y: encoder_mmv_y { 
+            compatible = "zmk,behavior-sensor-rotate"; 
+            label = "ENCODER_MMV_Y"; 
+            #binding-cells = <0>; 
+            bindings = < 
+                &mmv 0 -10 
+                &mmv 0 10 
+            >; 
+        }; 
+    }; 
+};
 / {
     // Activate ADJUST layer by pressing raise and lower
 
@@ -75,8 +98,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+                <&encoder_mmv_y>,
+                <&encoder_mmv_x>;
         };
 
         navigation {
