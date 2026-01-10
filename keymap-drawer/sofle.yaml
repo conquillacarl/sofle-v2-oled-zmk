@@ -96,7 +96,7 @@ layers:
   - '&mmv MOVE_LEFT'
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
-  - DEL
+  - '*'
   - DEL
   - {t: ▽, type: trans}
   - KP 1
@@ -110,7 +110,7 @@ layers:
   - ']'
   - ;
   - ':'
-  - BACKSPACE
+  - /
   - BACKSPACE
   - KP 0
   - KP DOT
