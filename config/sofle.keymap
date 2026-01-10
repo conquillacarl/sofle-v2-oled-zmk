@@ -74,11 +74,9 @@
                               &kp KP_N0        &kp KP_DOT       &kp KP_ENTER     &tog 1          &tog 1    &trans  &trans        &trans          &trans          &trans
             >;
 
-            sensor-bindings = <&encoder_mmv_y>, <&encoder_mmv_x>;
-
-//            sensor-bindings =
-//                <&inc_dec_kp PG_UP PG_DN>,
-//                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings =
+                <&inc_dec_kp PG_UP PG_DN>,
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         navigation {
