@@ -26,7 +26,7 @@
             label = "ENCODER_MMV_X"; 
             #binding-cells = <0>; 
             bindings = < 
-                &mmv 10 0 
+                &mmv 10 0,
                 &mmv -10 0 
             >; 
         }; 
@@ -36,7 +36,7 @@
             label = "ENCODER_MMV_Y"; 
             #binding-cells = <0>; 
             bindings = < 
-                &mmv 0 -10 
+                &mmv 0 -10,
                 &mmv 0 10 
             >; 
         }; 
