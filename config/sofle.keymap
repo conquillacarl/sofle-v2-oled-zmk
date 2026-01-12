@@ -31,6 +31,14 @@
         };
     };
 
+    scroll_encoder: scroll_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+        tap-ms = <30>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -52,7 +60,7 @@
                              &kp LGUI  &kp LALT  &kp LCTRL  &lt 1 SPACE  &lt 1 SPACE         &lt 2 BACKSPACE  &mo 2   &kp ENTER  &kp RALT   &lt 1 RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT>, <&inc_dec_kp UP DOWN>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         numberpad {
@@ -74,9 +82,8 @@
                               &kp KP_N0        &kp KP_DOT       &kp KP_ENTER     &tog 1          &tog 1    &trans  &trans        &trans          &trans          &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp PG_UP PG_DN>,
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>, <&inc_dec_kp UP DOWN>;
+
         };
 
         navigation {
@@ -97,9 +104,7 @@
                      &trans        &trans     &trans        &trans         &trans      &tog 2   &tog 2     &trans              &trans         &trans
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
-                <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>, <&inc_dec_kp UP DOWN>;
         };
 
         adjust_layer {
