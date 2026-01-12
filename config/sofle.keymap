@@ -32,9 +32,9 @@
     };
 
     scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+        compatible = "zmk,behavior-sensor-rotate-var";
+        #sensor-binding-cells = <2>;
+        bindings = <&msc>, <&msc>;
     };
 
     keymap {
@@ -58,7 +58,7 @@
                              &kp LGUI  &kp LALT  &kp LCTRL  &lt 1 SPACE  &lt 1 SPACE         &lt 2 BACKSPACE  &mo 2   &kp ENTER  &kp RALT   &lt 1 RGUI
             >;
 
-            sensor-bindings = <&scroll_encoder>, <&scroll_encoder>;
+            sensor-bindings = <&scroll_encoder SCRL_DOWN SCRL_UP>, <&scroll_encoder SCRL_DOWN SCRL_UP>;
         };
 
         numberpad {
