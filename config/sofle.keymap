@@ -35,7 +35,7 @@
         compatible = "zmk,behavior-sensor-rotate-var";
         #sensor-binding-cells = <2>;
         bindings = <&mmv>, <&mmv>;
-        tap-ms = <30>;
+        tap-ms = <100>;
     };
 
     scroll_encoder: scroll_encoder {
@@ -66,7 +66,7 @@
                              &kp LGUI  &kp LALT  &kp LCTRL  &lt 1 SPACE  &lt 1 SPACE         &lt 2 BACKSPACE  &mo 2   &kp ENTER  &kp RALT   &lt 1 RGUI
             >;
 
-            sensor-bindings = <&mouse_encoder MOVE_LEFT MOVE_RIGHT>, <&scroll_encoder SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&mouse_encoder MOVE_LEFT MOVE_RIGHT>, <&mouse_encoder MOVE_UP MOVE_DOWN>;
         };
 
         numberpad {
@@ -110,7 +110,7 @@
                      &trans        &trans     &trans        &trans         &trans      &tog 2   &tog 2     &trans              &trans         &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT>, <&inc_dec_kp UP DOWN>;
+            sensor-bindings = <&scroll_encoder SCRL_DOWN SCRL_UP>, <&scroll_encoder SCRL_DOWN SCRL_UP>;
         };
 
         adjust_layer {
