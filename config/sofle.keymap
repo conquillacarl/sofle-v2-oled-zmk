@@ -31,10 +31,18 @@
         };
     };
 
+    mouse_encoder: mouse_encoder {
+        compatible = "zmk,behavior-sensor-rotate-var";
+        #sensor-binding-cells = <2>;
+        bindings = <&mmv>, <&mmv>;
+        tap-ms = <200>;
+    };
+
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate-var";
         #sensor-binding-cells = <2>;
         bindings = <&msc>, <&msc>;
+        tap-ms = <200>;
     };
 
     keymap {
