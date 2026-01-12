@@ -59,8 +59,8 @@
                              &kp LGUI  &kp LALT  &kp LCTRL  &lt 1 SPACE  &lt 1 SPACE         &lt 2 BACKSPACE  &mo 2   &kp ENTER  &kp RALT   &lt 1 RGUI
             >;
 
-            //sensor-bindings = <&mouse_encoder MOVE_LEFT MOVE_RIGHT>, <&mouse_encoder MOVE_DOWN MOVE_UP>;
-            sensor-bindings = <&mouse_encoder MOVE_X(-100) MOVE_X(100)>, <&mouse_encoder MOVE_Y(-100) MOVE_Y(100)>;
+            sensor-bindings = <&mouse_encoder MOVE_LEFT MOVE_RIGHT>, <&mouse_encoder MOVE_DOWN MOVE_UP>;
+            //sensor-bindings = <&mouse_encoder MOVE_X(-100) MOVE_X(100)>, <&mouse_encoder MOVE_Y(-100) MOVE_Y(100)>;
         };
 
         numberpad {
@@ -88,8 +88,8 @@
                      &trans        &trans     &trans        &trans         &trans      &tog 2   &tog 2     &trans              &trans         &trans
             >;
 
-            //sensor-bindings = <&scroll_encoder SCRL_LEFT SCRL_RIGHT>, <&scroll_encoder SCRL_DOWN SCRL_UP>;
-            sensor-bindings = <&scroll_encoder MOVE_Y(-3) MOVE_Y(3)>, <&scroll_encoder MOVE_Y(-30) MOVE_Y(30)>;
+            sensor-bindings = <&scroll_encoder SCRL_LEFT SCRL_RIGHT>, <&scroll_encoder SCRL_DOWN SCRL_UP>;
+            //sensor-bindings = <&scroll_encoder MOVE_Y(-3) MOVE_Y(3)>, <&scroll_encoder MOVE_Y(-30) MOVE_Y(30)>;
         };
 
         adjust_layer {
