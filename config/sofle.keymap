@@ -42,7 +42,7 @@
         compatible = "zmk,behavior-sensor-rotate-var";
         #sensor-binding-cells = <2>;
         bindings = <&msc>, <&msc>;
-        tap-ms = <30>;
+        tap-ms = <20>;
     };
 
     keymap {
@@ -66,7 +66,7 @@
                              &kp LGUI  &kp LALT  &kp LCTRL  &lt 1 SPACE  &lt 1 SPACE         &lt 2 BACKSPACE  &mo 2   &kp ENTER  &kp RALT   &lt 1 RGUI
             >;
 
-            sensor-bindings = <&scroll_encoder SCRL_DOWN SCRL_UP>, <&scroll_encoder SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&mouse_encoder MOVE_LEFT MOVE_RIGHT>, <&scroll_encoder SCRL_DOWN SCRL_UP>;
         };
 
         numberpad {
