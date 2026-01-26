@@ -58,7 +58,7 @@ layers:
   - {t: SPACE, h: numberpad}
   - {t: BACKSPACE, h: navigation}
   - navigation
-  - ENTER
+  - {t: ENTER, h: RCTRL}
   - RALT
   - {t: RGUI, h: numberpad}
   numberpad:
