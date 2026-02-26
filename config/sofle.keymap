@@ -46,10 +46,10 @@
 
         tap-ms = <72>;
     };
-*/
+
     behaviors {
     };
-
+*/
     keymap {
         compatible = "zmk,keymap";
 
