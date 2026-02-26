@@ -92,8 +92,8 @@
             >;
 
             sensor-bindings =
-                <&scroll_encoder SCRL_LEFT SCRL_RIGHT>,
-                <&scroll_encoder SCRL_DOWN SCRL_UP>;
+                <&inc_dec_kp PG_DN PG_UP>,
+                <&inc_dec_kp PG_UP PG_DN>;
 
             //sensor-bindings = <&scroll_encoder MOVE_Y(-3) MOVE_Y(3)>, <&scroll_encoder MOVE_Y(-30) MOVE_Y(30)>;
         };
