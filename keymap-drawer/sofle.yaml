@@ -111,7 +111,7 @@ layers:
   - ;
   - ':'
   - /
-  - BACKSPACE
+  - {t: BACKSPACE, h: RIGHT SHIFT}
   - {t: KP 0, h: (}
   - {t: KP DOT, h: )}
   - KP ENTER
@@ -172,7 +172,7 @@ layers:
   - Ctl+RIGHT
   - END
   - BACKSPACE
-  - BACKSPACE
+  - {t: BACKSPACE, h: RIGHT SHIFT}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
