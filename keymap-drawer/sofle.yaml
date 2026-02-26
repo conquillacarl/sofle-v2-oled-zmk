@@ -49,7 +49,7 @@ layers:
   - M
   - ','
   - .
-  - /
+  - \
   - {t: ENTER, h: RIGHT SHIFT}
   - LGUI
   - LALT
@@ -84,7 +84,7 @@ layers:
   - '&mkp MB3'
   - '&mmv MOVE_UP'
   - '&mkp MB2'
-  - '|'
+  - \
   - ']'
   - {t: KP ASTERISK, h: KP NUMLOCK}
   - KP 4
