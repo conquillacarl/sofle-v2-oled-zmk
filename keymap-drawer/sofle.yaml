@@ -112,8 +112,8 @@ layers:
   - ':'
   - /
   - BACKSPACE
-  - KP 0
-  - KP DOT
+  - {t: KP 0, h: (}
+  - {t: KP DOT, h: )}
   - KP ENTER
   - {t: numberpad, h: toggle, type: held}
   - {t: numberpad, h: toggle}
