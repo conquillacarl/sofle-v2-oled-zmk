@@ -49,7 +49,7 @@ layers:
   - M
   - ','
   - .
-  - \
+  - /
   - {t: ENTER, h: RIGHT SHIFT}
   - LGUI
   - LALT
@@ -110,7 +110,7 @@ layers:
   - ']'
   - ;
   - ':'
-  - /
+  - \
   - {t: BACKSPACE, h: RIGHT SHIFT}
   - {t: KP 0, h: (}
   - {t: KP DOT, h: )}
