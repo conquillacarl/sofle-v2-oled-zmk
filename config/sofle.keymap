@@ -80,7 +80,9 @@
                                           &mt LEFT_PARENTHESIS KP_N0  &mt RIGHT_PARENTHESIS KP_DOT  &kp KP_ENTER     &tog 1          &tog 1    &trans  &trans        &trans          &trans          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT>, <&inc_dec_kp UP DOWN>;
+            sensor-bindings =
+                <&inc_dec_kp PG_UP PG_DN>,
+                <&inc_dec_kp RG(TAB) RG(RS(TAB))>;
         };
 
         navigation {
@@ -94,8 +96,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp PG_DN PG_UP>,
-                <&inc_dec_kp PG_UP PG_DN>;
+                <&inc_dec_kp RC(TAB) RC(RS(TAB))>,
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
             //sensor-bindings = <&scroll_encoder MOVE_Y(-3) MOVE_Y(3)>, <&scroll_encoder MOVE_Y(-30) MOVE_Y(30)>;
         };
