@@ -63,9 +63,7 @@
                              &kp LGUI  &kp LALT  &kp LCTRL  &lt 1 SPACE  &lt 1 SPACE         &lt 2 BACKSPACE  &mo 2   &mt RCTRL ENTER  &kp RALT   &lt 1 RGUI
             >;
 
-            sensor-bindings =
-                <&mouse_encoder MOVE_LEFT MOVE_RIGHT>,
-                <&mouse_encoder MOVE_DOWN MOVE_UP>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>, <&inc_dec_kp UP DOWN>;
 
             //sensor-bindings = <&mouse_encoder MOVE_X(-100) MOVE_X(100)>, <&mouse_encoder MOVE_Y(-100) MOVE_Y(100)>;
         };
